@@ -32,7 +32,7 @@ def load_config():
         "check_interval_hours": 6,
         "notifications": {
             "min_discount_percent": 10,
-            "only_notify_on_discount": true
+            "only_notify_on_discount": True
         }
     }
     
