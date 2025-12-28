@@ -1,9 +1,16 @@
 {
   "apps": {
     "1085660": "Destiny 2 (Base)",
-    "1090150": "Destiny 2: Forsaken Pack"
+    "1090150": "Destiny 2: Forsaken Pack",
+    "3205620": "Destiny 2: Director's Cut",
+    "1172470": "Apex Legends",
+    "292030": "The Witcher 3: Wild Hunt"
   },
   "region": "co",
   "language": "spanish",
-  "check_interval_hours": 6
+  "check_interval_hours": 6,
+  "notifications": {
+    "min_discount_percent": 10,
+    "only_notify_on_discount": true
+  }
 }
