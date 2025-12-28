@@ -1,0 +1,35 @@
+name: Steam Price Checker
+
+on:
+  schedule:
+    # Ejecuta cada 6 horas
+    - cron: '0 */6 * * *'
+  workflow_dispatch:  # Permite ejecución manual
+
+jobs:
+  check-prices:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+    
+    - name: Run Steam price checker
+      env:
+        DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      run: python steam_checker.py
+    
+    - name: Commit price history if changed
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add precios_vistos.json
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update price history" && git push)
