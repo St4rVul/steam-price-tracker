@@ -4,14 +4,14 @@
     "last_discount": 100,
     "last_notification": "",
     "name": "Destiny 2 (Base)",
-    "last_checked": "2026-09-14T17:26:25.259643"
+    "last_checked": "2026-09-14T21:18:15.126814"
   },
   "1090150": {
     "last_price": 335000,
     "last_discount": 90,
     "last_notification": "2026-09-08T20:34:45.884848",
     "name": "Destiny 2: Forsaken Pack",
-    "last_checked": "2026-09-14T17:26:27.573399"
+    "last_checked": "2026-09-14T21:18:17.307052"
   },
   "3205620": {
     "last_price": 20100000,
@@ -25,13 +25,13 @@
     "last_discount": 100,
     "last_notification": "2025-12-28T19:30:32.212715",
     "name": "Apex Legends",
-    "last_checked": "2026-09-14T17:26:30.192696"
+    "last_checked": "2026-09-14T21:18:19.758960"
   },
   "292030": {
     "last_price": 14900000,
     "last_discount": 0,
     "last_notification": "2026-07-27T19:18:00.767824",
     "name": "The Witcher 3: Wild Hunt",
-    "last_checked": "2026-09-14T17:26:32.360907"
+    "last_checked": "2026-09-14T21:18:21.954818"
   }
 }
